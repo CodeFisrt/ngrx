@@ -14,7 +14,7 @@ export class AppComponent {
    counter$: Observable<number> = new Observable<number>;
 
    constructor(private store: Store<AppState>){
-    this.counter$ = this.store.select(selectCount)
+    //this.counter$ = this.store.select(selectCount)
    }
 
    onIncrement() {

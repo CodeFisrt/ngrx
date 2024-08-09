@@ -1,1 +1,7 @@
-<button (click)="onIncrr()">Increment from nUser</button>
+<p>{{userList$|async}}</p>
+
+<ul>
+    <li *ngFor="let user of userList$|async">
+      {{user.name}} - {{user.website}}
+    </li>
+</ul>
